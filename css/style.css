@@ -1,0 +1,90 @@
+/* start global */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--color-Two);
+}
+
+:root {
+    --color-One: hsl(0, 0%, 100%);
+    --color-Two: hsl(212, 45%, 89%);
+    --color-Three: hsl(220, 15%, 55%);
+    --color-Four: hsl(218, 44%, 22%);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+/* end global */
+/* start box */
+.box {
+    width: 320px;
+    height: 420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--color-One);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.box img{
+    width: 280px;
+    height: 60%;
+    border-radius: inherit;
+
+}
+.box .info {
+    margin-top: 20px;
+    text-align: center;
+}
+.box .info h2{
+    margin-bottom: 10px;
+}
+.box .info p{
+    opacity: .7;
+}
+/* end box */
